@@ -1,110 +1,163 @@
-body {
-  padding: 0;
-  margin: 0;
-}
-body, #entry {
-  background: #22252a;
-  color: #eee;
-}
-body, table {
-  font-family: DejaVu Sans Mono, fixed; 
-  font-size: 14pt;
-  line-height: 150%;
-}
-tr,td,table {
-  padding: 0;
-  margin: 0;
-  outline-width: 0;
-  border-width: 0;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0
+body
+{
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
 }
 
-
-a { text-decoration: none; color: #888; }
-a:hover { text-decoration: underline; color: #aaa; }
-
-#loading, #connect {
-  background: #22252a;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 1em;
+body, #entry
+{
+	background: #22252a;
+	color: #eee;
 }
 
-#loading { z-index: 10000000; }
-#connect { z-index: 10000001; }
-
-#loading p, #connect fieldset  {
-  font-family: DejaVu Sans Mono, fixed; 
-  width: 30em;
-  border: 0;
+body, table
+{
+	font-family: Ubuntu, fixed, serif;
+	font-size: 14pt;
+	line-height: 150%;
 }
 
-#toolbar {
-  position: fixed;
-  color: #fff;
-  width: 100%; 
-  bottom: 0;
-  background: #733;
+tr, td, table
+{
+	padding: 0;
+	margin: 0;
+	outline-width: 0;
+	border-width: 0;
 }
 
-#entry {
-  width: 100%;
-  font-size: inherit;
-  padding: 1em;
-  margin: 0;
-  border-width: 0;
-  outline-width: 0;
-  clear: both;
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0
 }
 
-#log {
-  display: block;
-  /* enough padding to clear the toolbar.. is there a better way to do this? */
-  padding-bottom: 5.1em; 
-  background: inherit;
-  overflow: hidden;
+a
+{
+	text-decoration: none;
+	color: #888;
+}
+
+a:hover
+{
+	text-decoration: underline;
+	color: #aaa;
+}
+
+#loading, #connect
+{
+	background: #22252a;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 1em;
+}
+
+#loading
+{
+	z-index: 10000000;
+}
+
+#connect
+{
+	z-index: 10000001;
+}
+
+#loading p, #connect fieldset
+{
+	font-family: Ubuntu, fixed;
+	width: 30em;
+	border: 0;
+}
+
+#toolbar
+{
+	position: fixed;
+	color: #fff;
+	width: 100%;
+	bottom: 0;
+	background: #733;
+}
+
+#entry
+{
+	width: 100%;
+	font-size: inherit;
+	padding: 1em;
+	margin: 0;
+	border-width: 0;
+	outline-width: 0;
+	clear: both;
+}
+
+#log
+{
+	/* enough padding to clear the toolbar.. is there a better way to do this? */
+	/*padding-bottom: 5.1em; */
+	display: block;
+	background: inherit;
+	overflow: hidden;
+}
+
+.my-message
+{
+	color: #fafeaa;
 }
 
 /* not very important info */
-.notice td, .join td, .part td, .message .date { color: #555; }
-.error td { color: #933; }
-.personal .nick, .notice .nick { color: #cd5; }
-
-.message {
-  margin: 0.1em 0;
+.notice td, .join td, .part td, .message .date
+{
+	color: #555;
 }
 
-.message td {
-  vertical-align: top;
+.error td
+{
+	color: #933;
 }
 
-.nick { 
-  font-weight: bold;
-  padding: 0 1em 0 0.5em;
+.personal .nick, .notice .nick
+{
+	color: #cd5;
 }
 
-.nick a {
-  color: inherit;
+.message
+{
+	margin: 0.1em 0;
 }
 
-#toolbar ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.message td
+{
+	vertical-align: top;
 }
 
-#toolbar li {
-  display: block; 
-  float: left;
-  margin: 0 2em 0 0;
+.nick
+{
+	font-weight: bold;
+	padding: 0 1em 0 0.5em;
 }
 
-#usersLink {
-  color: inherit;
+.nick a
+{
+	color: inherit;
+}
+
+#toolbar ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#toolbar li
+{
+	display: block;
+	float: left;
+	margin: 0 2em 0 0;
+}
+
+#usersLink
+{
+	color: inherit;
 }
